@@ -1,0 +1,13 @@
+.batch-div:hover {
+  background-color: #ffcbcb;
+  box-shadow: 4px 4px 10px #888888;
+  transform: scale(1.1);
+}
+.batch-div {
+  /* margin: 1em; */
+  transition: transform 0.7s;
+  height: 100%;
+  background-color: "#E8E8E8";
+  /* border-radius: 100; */
+  /* border: "1px solid black" !important; */
+}
