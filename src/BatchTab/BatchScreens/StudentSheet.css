@@ -5,7 +5,7 @@
 }
 
 .grid {
-  border: "1px solid black";
+  border: "1px solid blue";
   /* margin: 4%; */
   width: 100%;
   height: max-content;
@@ -15,7 +15,8 @@
   font-size: large;
   border-radius: 40% !important;
 }
-
+.cell {
+}
 .cell :read-only {
   text-align: center;
 }
@@ -48,26 +49,22 @@
   border: grey solid 1px;
   vertical-align: middle !important;
   background-color: white !important;
-  height: min-content !important;
+  height: max-content !important;
 }
 .read-only {
   background-color: whitesmoke !important;
 }
-.selected {
+/* .selected {
   border: 2px double blue !important;
-}
+} */
 .grid tbody tr td {
   height: 5px !important;
   /* border: 1px solid #ececec !important; */
 }
 .data-editor {
-  /* padding: 2%; */
-  /* margin: 0%; */
   height: 100% !important;
   width: 100% !important;
   font-size: large !important;
-  /* height: 100%; */
-  border: 2px double blue !important;
 }
 .value-viewer {
   /* background-color: red !important; */

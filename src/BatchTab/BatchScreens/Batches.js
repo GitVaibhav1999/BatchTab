@@ -21,10 +21,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Batches() {
-  const { value_batches, value_redirect } = useContext(DataContext);
+  const { value_batches, value_redirect, value_student_list } = useContext(
+    DataContext
+  );
   const [batches] = value_batches;
   const [redirect, setRedirect] = value_redirect;
-
+  const [studentList, setStudentList] = value_student_list;
   const classes = useStyles();
   const history = useHistory();
 
@@ -40,6 +42,11 @@ function Batches() {
               setRedirect({
                 id: each_batch.BatchID,
                 name: each_batch.BatchName,
+              });
+              setStudentList({
+                batchID: "",
+                batchName: "",
+                grid: [],
               });
               history.push("/batchDetail");
             }}

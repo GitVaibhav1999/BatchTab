@@ -6,7 +6,10 @@ export const DataContext = createContext();
 export const DataProvider = (props) => {
   const [batches, setBatches] = useState([]);
   const [batchDetails, setBatchDetail] = useState();
-  const [redirect, setRedirect] = useState();
+  const [redirect, setRedirect] = useState({
+    id: "",
+    name: "",
+  });
   const [studentList, setSudentList] = useState({
     batchID: "",
     batchName: "",
