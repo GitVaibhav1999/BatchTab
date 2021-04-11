@@ -7,6 +7,11 @@ export const DataProvider = (props) => {
   const [batches, setBatches] = useState([]);
   const [batchDetails, setBatchDetail] = useState();
   const [redirect, setRedirect] = useState();
+  const [studentList, setSudentList] = useState({
+    batchID: "",
+    batchName: "",
+    grid: [],
+  });
 
   useEffect(() => {
     async function getBatchList() {
@@ -23,6 +28,7 @@ export const DataProvider = (props) => {
       value={{
         value_batches: [batches, setBatches],
         value_redirect: [redirect, setRedirect],
+        value_student_list: [studentList, setSudentList],
       }}
     >
       {props.children}

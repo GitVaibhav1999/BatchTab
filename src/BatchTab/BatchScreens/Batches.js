@@ -28,8 +28,6 @@ function Batches() {
   const classes = useStyles();
   const history = useHistory();
 
-  // const showBatchDetail = () =>
-
   return (
     <div>
       <Typography style={{ height: "3em", fontSize: "3rem" }}>

@@ -1,0 +1,95 @@
+.grid-div {
+  height: 60vh;
+
+  width: 100%;
+}
+
+.grid {
+  border: "1px solid black";
+  /* margin: 4%; */
+  width: 100%;
+  height: max-content;
+  min-height: 10px;
+  min-width: 800px;
+  /* align-self: center; */
+  font-size: large;
+  border-radius: 40% !important;
+}
+
+.cell :read-only {
+  text-align: center;
+}
+.grid tbody tr:first-child td {
+  /* background-color: #3f658a !important; */
+  color: black !important;
+  background-color: #5b57c664 !important;
+  padding: 0.6% !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter !important;
+}
+
+.grid tbody tr td:first-child {
+  width: 4% !important;
+  padding-left: 0;
+  margin: 0;
+  background-color: transparent !important;
+  vertical-align: middle;
+  /* border: 1px double blue !important */
+  /* border-bottom: grey  solid 1px !important; */
+}
+
+.grid tbody tr td:nth-child(2) {
+  width: 13%;
+}
+
+/* .grid tbody tr:nth-child(3) */
+
+.cell .not-changed {
+  border: grey solid 1px;
+  vertical-align: middle !important;
+  background-color: white !important;
+  height: min-content !important;
+}
+.read-only {
+  background-color: whitesmoke !important;
+}
+.selected {
+  border: 2px double blue !important;
+}
+.grid tbody tr td {
+  height: 5px !important;
+  /* border: 1px solid #ececec !important; */
+}
+.data-editor {
+  /* padding: 2%; */
+  /* margin: 0%; */
+  height: 100% !important;
+  width: 100% !important;
+  font-size: large !important;
+  /* height: 100%; */
+  border: 2px double blue !important;
+}
+.value-viewer {
+  /* background-color: red !important; */
+  padding-top: 2% !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.changed {
+  background-color: lightskyblue !important;
+  border: 1px double blue !important;
+}
+
+.empty {
+  background-color: lightpink !important;
+  border: 1px double red !important;
+  opacity: 40% !important;
+}
+
+.visible {
+  visibility: hidden;
+}
+.in-active {
+  /* background-color: grey !important; */
+  opacity: 30%;
+}
