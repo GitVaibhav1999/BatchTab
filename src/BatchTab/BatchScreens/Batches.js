@@ -28,7 +28,7 @@ function Batches() {
   const classes = useStyles();
   const history = useHistory();
 
-  const showBatchDetail = () => history.push("/batchDetail");
+  // const showBatchDetail = () =>
 
   return (
     <div>
@@ -39,14 +39,18 @@ function Batches() {
         {batches.map((each_batch) => (
           <div
             onClick={() => {
-              setRedirect(each_batch.BatchName);
-              showBatchDetail();
+              setRedirect({
+                id: each_batch.BatchID,
+                name: each_batch.BatchName,
+              });
+              history.push("/batchDetail");
             }}
             style={{ margin: "2em", height: "10em" }}
           >
             <BatchCard
               batch_name={each_batch.BatchName}
               batch_students={each_batch.NoOfStudent}
+              batch_year={each_batch.BatchYear}
             />
           </div>
         ))}

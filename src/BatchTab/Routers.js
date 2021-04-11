@@ -11,7 +11,7 @@ import BatchDetail from "./BatchScreens/BatchDetail";
 
 function Routers() {
   const { value_redirect } = useContext(DataContext);
-  //   const [redirect] = value_redirect;
+  const [redirect] = value_redirect;
 
   return (
     <div>

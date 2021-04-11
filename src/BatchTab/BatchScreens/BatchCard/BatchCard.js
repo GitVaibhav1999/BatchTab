@@ -16,6 +16,7 @@ import { DataContext } from "../../batchData/batchCONTEXT";
 function BatchCard(props) {
   const batch_name = props.batch_name;
   const batch_students = props.batch_students;
+  const batch_year = props.batch_year;
 
   return (
     <Paper variant="outlined" className="batch-div" elevation="0">

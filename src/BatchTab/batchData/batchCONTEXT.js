@@ -1,20 +1,21 @@
 import React, { createContext, useState, useEffect } from "react";
-import { instance } from "./batchesAPI";
+import { get, getData } from "./batchesAPI";
 
 export const DataContext = createContext();
 
 export const DataProvider = (props) => {
   const [batches, setBatches] = useState([]);
   const [batchDetails, setBatchDetail] = useState();
-  const [redirect, setRedirect] = useState("");
+  const [redirect, setRedirect] = useState();
 
   useEffect(() => {
-    async function getData() {
-      var reqData;
-      reqData = await instance.get("?CoachingID=143");
-      setBatches(reqData.data);
+    async function getBatchList() {
+      var batchList;
+      batchList = await getData("getBatchInfoAll?CoachingID=143");
+      setBatches(batchList.data);
+      console.log(batchList.data);
     }
-    getData();
+    getBatchList();
   }, []);
 
   return (
