@@ -37,16 +37,20 @@ function BatchDetail() {
         alignItems="center"
         spacing={3}
         style={{
-          padding: "3%",
+          display: "flex",
+          paddingLeft: "2%",
+          width: "100vw",
         }}
       >
         <Grid item xs={12}>
-          <Typography variant="h3">{studentList.batchName}</Typography>
+          <Typography style={{ padding: "1%" }} variant="h3">
+            {studentList.batchName}
+          </Typography>
         </Grid>
-        <Grid alignItems="center" item xs={12}>
+        <Grid style={{ height: "40em" }} alignItems="center" item xs={12}>
           <StudentSheet />
         </Grid>
-        <Grid style={{ padding: "3em" }} alignItems="center" item xs={6}>
+        <Grid style={{ paddingLeft: "1em" }} alignItems="center" item xs={6}>
           <AddStudent />
         </Grid>
         <Grid style={{ padding: "1em" }} alignItems="center" item xs={3}>

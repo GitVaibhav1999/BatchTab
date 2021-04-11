@@ -1,7 +1,7 @@
 .grid-div {
   height: 60vh;
 
-  width: 100%;
+  width: 95%;
 }
 
 .grid {
@@ -24,9 +24,14 @@
   /* background-color: #3f658a !important; */
   color: black !important;
   background-color: #5b57c664 !important;
-  padding: 0.6% !important;
+  padding-top: 0.8em !important;
+  padding-bottom: 0.8em !important;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter !important;
+}
+
+.tbody {
+  border: 1px solid red !important;
 }
 
 .grid tbody tr td:first-child {
@@ -40,7 +45,8 @@
 }
 
 .grid tbody tr td:nth-child(2) {
-  width: 13%;
+  width: 8%;
+  border-top-left-radius: 50 !important;
 }
 
 /* .grid tbody tr:nth-child(3) */
@@ -49,7 +55,7 @@
   border: grey solid 1px;
   vertical-align: middle !important;
   background-color: white !important;
-  height: max-content !important;
+  height: min-content !important;
 }
 .read-only {
   background-color: whitesmoke !important;

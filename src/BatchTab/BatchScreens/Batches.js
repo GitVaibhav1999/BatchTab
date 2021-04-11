@@ -31,7 +31,7 @@ function Batches() {
   const history = useHistory();
 
   return (
-    <div>
+    <div class="batches-main-div">
       <Typography style={{ height: "3em", fontSize: "3rem" }}>
         {"Your Batches "}
       </Typography>
